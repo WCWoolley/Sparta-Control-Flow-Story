@@ -30,8 +30,8 @@ var person = [name, active, skills];
 
 switch (skills) {
   case 3:
-    alert (`You've got important stuff to get done, you decide to stay in and be productive today.`)
-    alert (`GOOD END!`)
+    alert (`You've got important stuff to get done, you decide to stay in and be productive today.`);
+    alert (`GOOD END!`);
     break;
   default:
 }
@@ -53,11 +53,30 @@ var person = {
 
 switch (person[`phone`]) {
   case true:
-    alert (`After a nice stroll you use modern technology to find your car. What a lovely day this has been!`)
-    alert (`GOOD END!`)
+    alert (`After a nice stroll you use modern technology to find your car. What a lovely day this has been!`);
+    alert (`GOOD END!`);
     break;
   case false:
-    alert (`Out of the corner of your eye you spot him, Shia Labeouf.`)
+    alert (`Out of the corner of your eye you spot him, Shia Labeouf.`);
+    var run = prompt (`He's following you, about 30 feet back. He gets down on all fours and breaks into a sprint. He's gaining on you.\n\n1. Run.\n2. Defend yourself.`);
+    break;
+  default:
+}
+
+var person = [name, active, skills, phone, run];
+
+switch (person[4]) {
+  case `1` || `Run`:
+    var run = true;
+    var person = [name, active, skills, phone, run];
+    alert (`You're looking for your car, but you're all turned around. He's almost upon you now and you can see there's blood on his face! My god, there's blood everywhere!`);
+    break;
+  case `2` || `Defend yourself`:
+    var run = false;
+    var person = [name, active, skills, phone, run];
+    alert (`With what ${person[0]}?! You were out for a walk!`);
+    alert (`No match for such madness you quickly succumb. Shia Labeouf has you now..`);
+    alert (`BAD END!`);
     break;
   default:
 }
