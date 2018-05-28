@@ -135,3 +135,71 @@ switch (sneak) {
   default:
 
 }
+
+if (sneak != null) {
+  alert (`A-ha! In the distance, a small cottage with a light on. Hope!`)
+}
+
+switch (sneak) {
+  case true:
+    alert (`You move stealthily towards it.`);
+    break;
+  case false:
+    alert (`You rush quickly towards it.`);
+    break;
+  default:
+
+}
+
+if (sneak != null) {
+  var trap = prompt (`But your leg! Ah! It's caught in a bear trap!\n\n1. Drag it with you.\n2. Gnaw off your leg.\n3. Pry off.`)
+}
+
+if (trap === `1` || trap === `Drag it with you`) {
+  var trap = true;
+} else if (trap === '2' || trap === 'Gnaw off your leg'){
+  var trap = false;
+} else if (trap === '3' || trap === 'Pry it off'){
+  var trap = prompt (`You aren't strong enough! Try something else!\n\n1. Drag it with you.\n2. Gnaw off your leg.`)
+  if (trap === `1` || trap === `Drag it with you`) {
+    var trap = true;
+  } else if (trap === '2' || trap === 'Gnaw off your leg'){
+    var trap = false;
+  }
+}
+
+switch (trap) {
+  case true:
+    alert (`You limp towards the cottage, loudly dragging the bear trap.`);
+    break;
+  case false:
+    alert (`Gnawing off your leg (quiet, quiet), you limp towards the cottage.`);
+    break;
+  default:
+
+}
+
+if (sneak == true && trap == false) {
+  var strangle = prompt (`Sharpening an axe, he doesn't hear you enter.You're sneaking up behind him.\n\n1. Strangle.\n2. Take axe.`);
+} else {
+  alert (`Sharpening an axe, he's staring right at you! You made too much noise!`);
+  alert (`He gives you a wicked grin, raising the axe. You know no more.`);
+  alert (`NO STEALTH BAD END`);
+}
+
+if (strangle = `1` || strangle === `Strangle`) {
+  var strangle = true;
+} else if (strangle > 1 || strangle === 'Take axe'){
+  var strangle = false;
+}
+
+// switch (trap) {
+//   case true:
+//     alert (`You limp towards the cottage, loudly dragging the bear trap.`);
+//     break;
+//   case false:
+//     alert (`Gnawing off your leg (quiet, quiet), you limp towards the cottage.`);
+//     break;
+//   default:
+//
+// }
