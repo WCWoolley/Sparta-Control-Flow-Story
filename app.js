@@ -39,7 +39,7 @@ var person = [name, active, skills];
 switch (skills) {
   case 3:
     alert (`You've got important stuff to get done, you decide to stay in and be productive today.`);
-    alert (`PRIORITIES GOOD END!`);
+    alert (`PRIORITIES GOOD END`);
     break;
   default:
     var phone = prompt (`Well ${person[0]}, you're walking in the woods. There's no one around, does your phone have battery?`);
@@ -60,7 +60,7 @@ switch (skills) {
     switch (person[`phone`]) {
       case true:
         alert (`After a nice stroll you use modern technology to find your car. What a lovely day this has been!`);
-        alert (`NICE DAY OUT GOOD END!`);
+        alert (`NICE DAY OUT GOOD END`);
         break;
       case false:
         alert (`Out of the corner of your eye you spot him, Shia Labeouf.`);
@@ -77,8 +77,8 @@ switch (skills) {
         var person = [name, active, skills, phone, run];
         alert (`You're looking for your car, but you're all turned around. He's almost upon you now and you can see there's blood on his face! My god, there's blood everywhere!`);
         alert(`You start running for your life. (From Shia Labeouf.)`);
-        alert(`He's brandishing a knife. (It's Shia Labeouf)`);
-        alert(`Lurking in the shadows. (Hollywood superstar Shia Labeouf)`);
+        alert(`He's brandishing a knife. (It's Shia Labeouf.)`);
+        alert(`Lurking in the shadows. (Hollywood superstar Shia Labeouf.)`);
 
         switch (person[1]) {
           case true:
@@ -181,8 +181,8 @@ switch (skills) {
 
                     switch (stab) {
                       case 'Kidney' || 'kidney':
-                        alert (`Safe at last from Shia Labeouf`);
-                        alert (`You limp into the dark woods, blood oozing from your stump leg. But you have won. You've beaten Shia Labeouf`);
+                        alert (`Safe at last from Shia Labeouf.`);
+                        alert (`You limp into the dark woods, blood oozing from your stump leg. But you have won. You've beaten Shia Labeouf.`);
                         alert (`Wait! He isn't dead! Shia Surprise! There's a gun to your head, and death in his eyes!`);
 
                         switch (skills) {
@@ -196,7 +196,7 @@ switch (skills) {
                             alert (`BEST END`)
                             break;
                           default:
-                            alert (`But you can't do Jiu Jitsu and your sharp wit won't save you here! Body slammed by superstar Shia Labeouf`)
+                            alert (`But you can't do Jiu Jitsu and your sharp wit won't save you here! Body slammed by superstar Shia Labeouf.`)
                             alert (`BODYSLAM BAD END`)
                         }
 
