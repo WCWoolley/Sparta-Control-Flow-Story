@@ -50,3 +50,14 @@ var person = {
   skills: skills,
   phone: phone
 };
+
+switch (person[`phone`]) {
+  case true:
+    alert (`After a nice stroll you use modern technology to find your car. What a lovely day this has been!`)
+    alert (`GOOD END!`)
+    break;
+  case false:
+    alert (`Out of the corner of your eye you spot him, Shia Labeouf.`)
+    break;
+  default:
+}
